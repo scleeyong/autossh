@@ -1,4 +1,5 @@
 # autossh
+[README](https://github.com/scleeyong/autossh/edit/master/README.md|[中文文档]([https://github.com/ehang-io/nps/blob/master/README_zh.md](https://github.com/scleeyong/autossh/edit/master/README-ZH.md))
 
 [![Docker](https://badgen.net/badge/jnovack/autossh/blue?icon=docker)](https://hub.docker.com/r/jnovack/autossh)
 [![Github](https://badgen.net/badge/jnovack/autossh/purple?icon=github)](https://github.com/jnovack/autossh)
