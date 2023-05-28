@@ -12,23 +12,19 @@
 
 有成千上万个autossh Docker容器可供选择，为什么要使用这个呢？我希望您会发现它更易于使用。它体积更小、可定制性更强、具备自动化构建，并且非常易于使用，我希望您能从中学到一些东西。我尽力遵循标准和已经建立的约定，以便让您更容易理解并从该项目中复制和粘贴代码到其他项目中，以扩展您的知识！
 
-## Description
+## 描述
 
-``autossh`` is a program to start a copy of ssh and monitor it, restarting it
-as necessary should it die or stop passing traffic.
+``autossh`` 是一个程序，用于启动一个 ssh 进程并监控它，如果它死掉或停止传输数据，会自动重新启动。
 
-Before we begin, I want to define some terms.
+在开始之前，我想定义一些术语。
 
-- *local* - THIS docker container.
+- *local* - 指的是当前的 Docker 容器。
 
-- *target* - The endpoint and ultimate destination of the tunnel.
+- *target* - 隧道的终点和最终目的地。
 
-- *remote* - The 'middle-man', or proxy server you are tunnelling through to
-get to your *target*.
+- *remote* - 中间人，或者说是你通过它进行隧道连接以达到 *target*  的代理服务器。
 
-- *source* - The initial endpoint you are starting from that does not have
-access to the *target* endpoint, but does have access to the *remote*
-endpoint.
+- *source* - 最初的起点，它无法直接访问 *target*  终点，但可以访问 *remote* 终点。
 
 The *local* machine is USUALLY the same as the *target* but since we are using
 Docker, we have to abstract out the *local* container from the *target*
